@@ -1,17 +1,61 @@
-H1{
+#first_name{
+    position: relative;
     font-family: "Judson", serif;
-    font-weight: 400;
+    color: black;
+    font-weight: 500;
     font-style: normal;
     font-size: 50px;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #2A4494;
 }
 
+#surname{
+    position: relative;
+    font-family: "Judson", serif;
+    font-weight: 400;
+    color: black;
+    font-style: normal;
+    font-size: 50px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #2A4494;
+    letter-spacing: 13px;
+}
+
+header p{
+    position: relative;
+}
+
 #subheading{
+    position: relative;
     font-family: "Italianno", cursive;
     font-size: 30px;
     color: #2A4494;
     font-style: normal;
     -webkit-text-stroke: 0.2px;
     -webkit-text-stroke-color: black;
+    letter-spacing: 2px;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-image: url("images/Screenshot\ 2024-08-12\ at\ 11.05.48.png");
+    background-position: center;
+    background-size: cover;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255,255,255,0.5);
 }
