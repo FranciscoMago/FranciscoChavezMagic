@@ -157,5 +157,7 @@ article #subheading {
 }
 
 #dp {
-    border: 4px solid white;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to bottom,#FFD881, #FFFFFF);
+    border-image-slice: 1;
 }
