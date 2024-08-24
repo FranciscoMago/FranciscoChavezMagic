@@ -5,9 +5,10 @@
     color: black;
     font-weight: 500;
     font-style: normal;
-    font-size: 50px;
+    font-size: 60px;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #2A4494;
+    text-shadow: -3px 3px 2px rgb(0 0 0 / 0.19);
 }
 
 #surname{
@@ -16,10 +17,11 @@
     font-weight: 400;
     color: black;
     font-style: normal;
-    font-size: 50px;
+    font-size: 60px;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #2A4494;
-    letter-spacing: 13px;
+    letter-spacing: 14px;
+    text-shadow: -3px 3px 2px rgb(0 0 0 / 0.19);
 }
 
 header p{
@@ -29,7 +31,7 @@ header p{
 #subheading{
     position: relative;
     font-family: "Italianno", cursive;
-    font-size: 30px;
+    font-size: 40px;
     color: #2A4494;
     font-style: normal;
     -webkit-text-stroke: 0.2px;
@@ -71,6 +73,7 @@ article{
     background-image: url("images/pexels-mikhail-nilov-7676883.jpg");
     background-position: center;
     background-size: cover;
+    text-align: center;
 }
 
 article::before{
@@ -83,6 +86,14 @@ article::before{
     background-color: rgba(0,0,0,0.6);
 }
 
+article img{
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer{
     text-align: center;
     margin-top: 200vh;
@@ -91,12 +102,60 @@ footer{
     height: 100%;
     top: 0px;
     left: 0px;
+    font-family: "Judson", serif;
+    font-size: 22px;
+    font-weight: 100;
+    color: #162F79;
+    letter-spacing: 3px;
 }
 
-#heading {
-    color: #2A4494;
+h2 {
+    color: #162F79;
     font-family: "Judson", serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 50px;
+    font-size: 54px;
+    letter-spacing: 8px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #2A4494;
+}
+
+#suits{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position:relative;
+    filter: drop-shadow(-3px 5px 2px rgb(0 0 0 / 0.19));
+}
+
+#webDesignByOli p, 
+#webDesignByOli img,
+#phone img,
+#phone p,
+#email img,
+#email p{
+    display: inline-block;
+}
+
+#email {
+    margin-bottom: 36px;
+}
+
+article #subheading {
+    color: white;
+}
+
+#intro{
+    width: 60%;
+    position: relative;
+    font-family: "Judson", serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dp {
+    border: 4px solid white;
 }
