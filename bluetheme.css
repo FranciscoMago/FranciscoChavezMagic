@@ -1,3 +1,4 @@
+
 #first_name{
     position: relative;
     font-family: "Judson", serif;
@@ -37,12 +38,12 @@ header p{
 }
 
 header{
-    position: fixed;
+    position: absolute;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     justify-content: center;
-    height: 100%;
+    height: 100vh;
     top: 0px;
     left: 0px;
     background-image: url("images/magic-fire-artists.png");
@@ -58,4 +59,44 @@ header::before{
     bottom: 0px;
     left: 0px;
     background-color: rgba(255,255,255,0.5);
+}
+
+article{
+    margin-top: 100vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-image: url("images/pexels-mikhail-nilov-7676883.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+article::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+footer{
+    text-align: center;
+    margin-top: 200vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#heading {
+    color: #2A4494;
+    font-family: "Judson", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
 }
