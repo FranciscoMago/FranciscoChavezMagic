@@ -1,12 +1,16 @@
 
+body{
+    background-color: black;
+}
+
 #first_name{
     position: relative;
     font-family: "Judson", serif;
-    color: black;
-    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-weight: 550;
     font-style: normal;
     font-size: 60px;
-    -webkit-text-stroke: 1px;
+    -webkit-text-stroke: 0.2px;
     -webkit-text-stroke-color: #2A4494;
     text-shadow: -3px 3px 2px rgb(0 0 0 / 0.19);
 }
@@ -14,11 +18,11 @@
 #surname{
     position: relative;
     font-family: "Judson", serif;
-    font-weight: 400;
-    color: black;
+    font-weight: 550;
+    color: white;
     font-style: normal;
     font-size: 60px;
-    -webkit-text-stroke: 1px;
+    -webkit-text-stroke: 0px;
     -webkit-text-stroke-color: #2A4494;
     letter-spacing: 14px;
     text-shadow: -3px 3px 2px rgb(0 0 0 / 0.19);
@@ -32,9 +36,9 @@ header p{
     position: relative;
     font-family: "Italianno", cursive;
     font-size: 40px;
-    color: #2A4494;
+    color: white;
     font-style: normal;
-    -webkit-text-stroke: 0.2px;
+    -webkit-text-stroke: 0.1px;
     -webkit-text-stroke-color: black;
     letter-spacing: 2px;
 }
@@ -48,20 +52,27 @@ header{
     height: 100vh;
     top: 0px;
     left: 0px;
-    background-image: url("images/magic-fire-artists.png");
     background-position: center;
-    background-size: cover;
+    background-color: black;
+    z-index: -2;
 }
 
-header::before{
-    content: "";
+#background-video {
+    object-fit: cover;
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(255,255,255,0.5);
-}
+    top: 10%;
+    transform: translateY(-10%);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    margin-left: 50vw;
+    transform: translate(-50%, -20%);
+    overflow: hidden;
+ }
+
+
 
 article{
     margin-top: 100vh;
@@ -74,6 +85,7 @@ article{
     background-position: center;
     background-size: cover;
     text-align: center;
+    background-attachment: fixed;
 }
 
 article::before{
@@ -102,11 +114,13 @@ footer{
     height: 100%;
     top: 0px;
     left: 0px;
+    padding-bottom:  0px;
     font-family: "Judson", serif;
     font-size: 22px;
     font-weight: 100;
     color: #162F79;
     letter-spacing: 3px;
+    background-color: white;
 }
 
 h2 {
@@ -136,10 +150,6 @@ h2 {
     display: inline-block;
 }
 
-#email {
-    margin-bottom: 36px;
-}
-
 article #subheading {
     color: white;
 }
@@ -160,4 +170,19 @@ article #subheading {
     border: 4px solid transparent;
     border-image: linear-gradient(to bottom,#FFD881, #FFFFFF);
     border-image-slice: 1;
+}
+
+li{
+    all:unset;
+    display: table-row;
+}
+
+ul{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100vh;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
 }
