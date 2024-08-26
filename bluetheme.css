@@ -12,7 +12,7 @@ body{
     font-size: 60px;
     -webkit-text-stroke: 0px;
     -webkit-text-stroke-color: #2A4494;
-    text-shadow: -3px 3px 2px rgb(0 0 0 / 0.19);
+    text-shadow: -3px 3px 2px rgb(0 0 0/ 0.5);
 }
 
 #surname{
@@ -25,7 +25,7 @@ body{
     -webkit-text-stroke: 0px;
     -webkit-text-stroke-color: #2A4494;
     letter-spacing: 14px;
-    text-shadow: -3px 3px 2px rgb(0 0 0 / 0.19);
+    text-shadow: -3px 3px 2px rgb(0 0 0 / 0.5);
 }
 
 header p{
@@ -136,7 +136,7 @@ h2 {
     margin-top: 40px;
     margin-bottom: 40px;
     position:relative;
-    filter: drop-shadow(-3px 5px 2px rgb(0 0 0 / 0.19));
+    filter: drop-shadow(-3px 5px 2px rgb(0 0 0 / 0.3));
 }
 
 #webDesignByOli p, 
@@ -201,6 +201,10 @@ ul{
         margin-top: 20px;
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    #intro{
+        width: 80%;
     }
 
     #email{
