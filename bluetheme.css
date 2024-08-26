@@ -44,7 +44,6 @@ header p{
 }
 
 header{
-    position: absolute;
     display: flex;
     align-items: center;
     width: 100vw;
@@ -58,14 +57,14 @@ header{
 }
 
 #background-video {
+    position: absolute;
     height: 100%;
     object-fit: cover;
-    position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 0;
     overflow: hidden;
     margin-right: auto;
     margin-left: auto;
