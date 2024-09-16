@@ -1,6 +1,8 @@
 
 body{
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 #first_name{
@@ -64,34 +66,22 @@ header{
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 0;
+    z-index: -1;
     overflow: hidden;
     margin-right: auto;
     margin-left: auto;
  }
 
 article{
-    margin-top: 100vh;
-    position: absolute;
+    display: flex;
     width: 100vw;
-    height: 150vh;
     top: 0px;
     left: 0px;
-    background-image: url("images/pexels-mikhail-nilov-7676883.jpg");
+    background-image: url("images/pexels-mikhail-nilov-7676883.png");
     background-position: center;
     background-size: cover;
     text-align: center;
     background-attachment: fixed;
-}
-
-article::before{
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0,0,0,0.6);
 }
 
 article img{
@@ -102,15 +92,17 @@ article img{
     margin-right: auto;
 }
 ul{
+    justify-content: center;
     padding-left: 0px;
     margin: 0px
 }
 footer{
+    height: auto;
+    display: flex;
     text-align: center;
-    margin-top: 250vh;
-    position: absolute;
+    justify-content: center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     bottom: 0px;
     top: 0px;
     left: 0px;
@@ -132,6 +124,11 @@ h2 {
     letter-spacing: 8px;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #2A4494;
+}
+
+#arrows{
+    display: inline-block;
+    filter: drop-shadow(-3px 5px 2px rgb(0 0 0 / 0.3));
 }
 
 #suits{
@@ -157,7 +154,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-li:has(#insta){
+li:has(#insta), li:has(#arrows){
     display: flex;
     justify-content: center;
 }
